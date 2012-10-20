@@ -20,6 +20,8 @@
 		6A77C12D1632341B00EF8A0C /* linen_bg_tile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A77C12C1632341B00EF8A0C /* linen_bg_tile.jpg */; };
 		6A77C13816323DB800EF8A0C /* siri.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A77C13716323DB800EF8A0C /* siri.png */; };
 		6A77C13D163246B800EF8A0C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6A77C13C163246B800EF8A0C /* README.md */; };
+		6D1B085516326F4100CDB127 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 6D1B085416326F4100CDB127 /* icon.icns */; };
+		6D1B0859163284DC00CDB127 /* SiriBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1B0858163284DC00CDB127 /* SiriBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,9 @@
 		6A77C12C1632341B00EF8A0C /* linen_bg_tile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = linen_bg_tile.jpg; sourceTree = "<group>"; };
 		6A77C13716323DB800EF8A0C /* siri.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = siri.png; sourceTree = "<group>"; };
 		6A77C13C163246B800EF8A0C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		6D1B085416326F4100CDB127 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		6D1B0857163284DC00CDB127 /* SiriBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriBar.h; sourceTree = "<group>"; };
+		6D1B0858163284DC00CDB127 /* SiriBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,7 @@
 		6A77C0E916322F9700EF8A0C = {
 			isa = PBXGroup;
 			children = (
+				6D1B085416326F4100CDB127 /* icon.icns */,
 				6A77C13C163246B800EF8A0C /* README.md */,
 				6A77C0FE16322F9700EF8A0C /* SiriBar */,
 				6A77C11B16322F9800EF8A0C /* SiriBarTests */,
@@ -123,6 +129,8 @@
 			children = (
 				6A77C10A16322F9700EF8A0C /* AppDelegate.h */,
 				6A77C10B16322F9700EF8A0C /* AppDelegate.m */,
+				6D1B0857163284DC00CDB127 /* SiriBar.h */,
+				6D1B0858163284DC00CDB127 /* SiriBar.m */,
 				6A77C10D16322F9800EF8A0C /* MainMenu.xib */,
 				6A77C0FF16322F9700EF8A0C /* Supporting Files */,
 			);
@@ -239,6 +247,7 @@
 				6A77C12D1632341B00EF8A0C /* linen_bg_tile.jpg in Resources */,
 				6A77C13816323DB800EF8A0C /* siri.png in Resources */,
 				6A77C13D163246B800EF8A0C /* README.md in Resources */,
+				6D1B085516326F4100CDB127 /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +284,7 @@
 			files = (
 				6A77C10516322F9700EF8A0C /* main.m in Sources */,
 				6A77C10C16322F9700EF8A0C /* AppDelegate.m in Sources */,
+				6D1B0859163284DC00CDB127 /* SiriBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +470,7 @@
 				6A77C12816322F9800EF8A0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A77C12916322F9800EF8A0C /* Build configuration list for PBXNativeTarget "SiriBarTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +479,7 @@
 				6A77C12B16322F9800EF8A0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

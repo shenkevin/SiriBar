@@ -7,14 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "SiriBar.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
-
-@property (weak) IBOutlet NSWindow *window;
-@property (weak) IBOutlet NSWindow *screenwindow;
-
--(void)activateSiriBar;
--(void)deactivateSiriBar;
--(IBAction)showaboutwindow:(id)sender;
+@interface AppDelegate : NSObject <NSApplicationDelegate> {
+    IBOutlet SiriBar *siribar;
+}
 
 @end
