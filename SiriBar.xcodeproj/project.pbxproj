@@ -17,6 +17,8 @@
 		6A77C11816322F9800EF8A0C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A77C0F816322F9700EF8A0C /* Cocoa.framework */; };
 		6A77C12016322F9800EF8A0C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A77C11E16322F9800EF8A0C /* InfoPlist.strings */; };
 		6A77C12316322F9800EF8A0C /* SiriBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A77C12216322F9800EF8A0C /* SiriBarTests.m */; };
+		6A77C12D1632341B00EF8A0C /* linen_bg_tile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A77C12C1632341B00EF8A0C /* linen_bg_tile.jpg */; };
+		6A77C13816323DB800EF8A0C /* siri.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A77C13716323DB800EF8A0C /* siri.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		6A77C11F16322F9800EF8A0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A77C12116322F9800EF8A0C /* SiriBarTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SiriBarTests.h; sourceTree = "<group>"; };
 		6A77C12216322F9800EF8A0C /* SiriBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SiriBarTests.m; sourceTree = "<group>"; };
+		6A77C12C1632341B00EF8A0C /* linen_bg_tile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = linen_bg_tile.jpg; sourceTree = "<group>"; };
+		6A77C13716323DB800EF8A0C /* siri.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = siri.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,8 @@
 		6A77C0FF16322F9700EF8A0C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6A77C13716323DB800EF8A0C /* siri.png */,
+				6A77C12C1632341B00EF8A0C /* linen_bg_tile.jpg */,
 				6A77C10016322F9700EF8A0C /* SiriBar-Info.plist */,
 				6A77C10116322F9700EF8A0C /* InfoPlist.strings */,
 				6A77C10416322F9700EF8A0C /* main.m */,
@@ -227,6 +233,8 @@
 				6A77C10316322F9700EF8A0C /* InfoPlist.strings in Resources */,
 				6A77C10916322F9700EF8A0C /* Credits.rtf in Resources */,
 				6A77C10F16322F9800EF8A0C /* MainMenu.xib in Resources */,
+				6A77C12D1632341B00EF8A0C /* linen_bg_tile.jpg in Resources */,
+				6A77C13816323DB800EF8A0C /* siri.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +382,7 @@
 		6A77C12716322F9800EF8A0C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SiriBar/SiriBar-Prefix.pch";
@@ -386,6 +395,7 @@
 		6A77C12816322F9800EF8A0C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SiriBar/SiriBar-Prefix.pch";

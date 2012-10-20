@@ -10,6 +10,11 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSWindow *screenwindow;
+
+-(void)activateSiriBar;
+-(void)deactivateSiriBar;
+-(IBAction)showaboutwindow:(id)sender;
 
 @end

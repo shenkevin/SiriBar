@@ -30,6 +30,10 @@
 	<string>Copyright © 2012 1-Bit Software. All rights reserved.</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
+	<key>LSUIPresentationMode</key>
+	<real>0</real>
+	<key>LSUIElement</key>
+	<true/>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 </dict>
