@@ -50,8 +50,10 @@
     NSRect screenrect = [[NSScreen mainScreen] frame];
     [[_screenwindow animator] setFrame:NSMakeRect(0, 0, screenrect.size.width, screenrect.size.height) display:YES];
     [[_window animator] setFrame:NSMakeRect(0, -200, screenrect.size.width, 200) display:YES];
-    [[NSApplication sharedApplication] setPresentationOptions:nil];
     //[_screenwindow close];
+    [_window performSelector:@selector(close) withObject:nil afterDelay:[[NSAnimationContext currentContext] duration]];
+    [_screenwindow performSelector:@selector(close) withObject:nil afterDelay:[[NSAnimationContext currentContext] duration]];
+    [[NSApplication sharedApplication] setPresentationOptions:nil];
 }
 
 -(IBAction)showaboutwindow:(id)sender {
