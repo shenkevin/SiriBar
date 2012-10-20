@@ -22,7 +22,7 @@
      | NSApplicationPresentationAutoHideDock];
     NSRect screenrect = [[NSScreen mainScreen] frame];
     system("screencapture -mxtpng /tmp/screenshot.png"); // Create a temporary screenshot
-    NSURL *imgurl = [[NSURL alloc] initFileURLWithPath:@"file:///tmp/screenshot.png"];
+    //NSURL *imgurl = [[NSURL alloc] initFileURLWithPath:@"file:///tmp/screenshot.png"];
     NSImage *screenimg = [[NSImage alloc] initWithContentsOfFile:@"/tmp/screenshot.png"];
     NSRect secondframe = NSMakeRect(0, 0, screenrect.size.width, screenrect.size.height);
     [_screenwindow setStyleMask:NSBorderlessWindowMask];
@@ -50,7 +50,7 @@
     NSRect screenrect = [[NSScreen mainScreen] frame];
     [[_screenwindow animator] setFrame:NSMakeRect(0, 0, screenrect.size.width, screenrect.size.height) display:YES];
     [[_window animator] setFrame:NSMakeRect(0, -200, screenrect.size.width, 200) display:YES];
-    //[_window close];
+    [[NSApplication sharedApplication] setPresentationOptions:nil];
     //[_screenwindow close];
 }
 
