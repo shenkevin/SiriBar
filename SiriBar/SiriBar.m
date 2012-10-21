@@ -18,13 +18,30 @@
 
 -(void)activateSiriBar {
     NSRect screenrect = [[NSScreen mainScreen] frame];
-    system("screencapture -mxtpng /tmp/screenshot.png"); // Create a temporary screenshot
-    NSImage *screenimg = [[NSImage alloc] initWithContentsOfFile:@"/tmp/screenshot.png"];
+    CGError	err = CGDisplayNoErr;
+    CGDisplayCount		dspCount = 0;
+    // Get the list of active displays
+	
+	/* More error-checking here. */
+    if(err != CGDisplayNoErr)
+    {
+        NSLog(@"Could not get active display list (%d)\n", err);
+        return;
+    }
+    CGImageRef imageref = CGDisplayCreateImage(188826177);
+    NSImage* image = [[NSImage alloc] initWithSize:screenrect.size];
+    [image lockFocus];
+    CGContextDrawImage([[NSGraphicsContext currentContext]
+                        graphicsPort], *(CGRect*)&screenrect, imageref);
+    [image unlockFocus];
+    //system("screencapture -mxtpng /tmp/screenshot.png"); // Create a temporary screenshot
+    //NSImage *screenimg = [[NSImage alloc] initWithContentsOfFile:@"/tmp/screenshot.png"];
     NSRect secondframe = NSMakeRect(0, 0, screenrect.size.width, screenrect.size.height);
     _backwindow = [[NSWindow alloc] initWithContentRect:secondframe styleMask:NSBorderlessWindowMask backing:NSBackingStoreBuffered defer:NO];
+    [_backwindow setReleasedWhenClosed:NO];
     [[NSAnimationContext currentContext] setDuration:_contextDuration];
     [[_backwindow animator] setFrame:NSMakeRect(0, 200, screenrect.size.width, screenrect.size.height) display:YES];
-    [_backwindow setBackgroundColor:[NSColor colorWithPatternImage:screenimg]];
+    [_backwindow setBackgroundColor:[NSColor colorWithPatternImage:image]];
     [_backwindow setLevel:NSFloatingWindowLevel+1];
     [_backwindow setHasShadow:YES];
     windowclosebutton = [[NSButton alloc] initWithFrame:NSMakeRect(0,0,screenrect.size.width, screenrect.size.height)];

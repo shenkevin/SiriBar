@@ -15,6 +15,7 @@
 }
 
 -(IBAction)activateSiriBar:(id)sender;
+-(IBAction)deactivateSiriBar:(id)sender;
 -(IBAction)toggleScreen:(id)sender;
 -(IBAction)showaboutwindow:(id)sender;
 

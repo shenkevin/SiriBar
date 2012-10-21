@@ -13,10 +13,11 @@
     NSButton *windowclosebutton; // the fullscreen button that when clicked on, closes SiriBar. This button is assigned to backwindow.
     NSWindow *backwindow;
     IBOutlet NSButton *extrabutton;
+    CGDirectDisplayID *displays;
 }
 
 @property (weak) IBOutlet NSWindow *window;
-@property (retain) NSWindow *backwindow;
+@property (strong) NSWindow *backwindow;
 
 -(void)activateSiriBar; // To raise SiriBar
 -(void)raiseScreen; // To hide the screenshot, as to reveal more information

@@ -20,6 +20,10 @@
     [siribar activateSiriBar];
 }
 
+-(IBAction)deactivateSiriBar:(id)sender {
+    [siribar deactivateSiriBar];
+}
+
 -(IBAction)showaboutwindow:(id)sender {
     [siribar deactivateSiriBar];
     [[NSApplication sharedApplication] orderFrontStandardAboutPanel:sender];
