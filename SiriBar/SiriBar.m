@@ -10,10 +10,11 @@
 
 @implementation SiriBar
 
+@synthesize backwindow=_backwindow;
+
 -(void)activateSiriBar {
     NSRect screenrect = [[NSScreen mainScreen] frame];
     system("screencapture -mxtpng /tmp/screenshot.png"); // Create a temporary screenshot
-    //NSURL *imgurl = [[NSURL alloc] initFileURLWithPath:@"file:///tmp/screenshot.png"];
     NSImage *screenimg = [[NSImage alloc] initWithContentsOfFile:@"/tmp/screenshot.png"];
     NSRect secondframe = NSMakeRect(0, 0, screenrect.size.width, screenrect.size.height);
     _backwindow = [[NSWindow alloc] initWithContentRect:secondframe styleMask:NSBorderlessWindowMask backing:NSBackingStoreBuffered defer:NO];
@@ -35,7 +36,7 @@
     [_window setFrame:frame display:YES];
     [_window makeKeyAndOrderFront:self];
     [[_window animator] setFrame:NSMakeRect(0, 0, screenrect.size.width, 200) display:YES];
-    [_window setBackgroundColor:[NSColor colorWithPatternImage:[NSImage imageNamed:@"linen_bg_tile"]]];
+    [_window setBackgroundColor:[NSColor colorWithPatternImage:[NSImage imageNamed:@"siribar_bg_tile"]]];
 }
 
 -(void)raiseScreen {

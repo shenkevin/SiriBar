@@ -17,11 +17,18 @@
 		6A77C11816322F9800EF8A0C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A77C0F816322F9700EF8A0C /* Cocoa.framework */; };
 		6A77C12016322F9800EF8A0C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A77C11E16322F9800EF8A0C /* InfoPlist.strings */; };
 		6A77C12316322F9800EF8A0C /* SiriBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A77C12216322F9800EF8A0C /* SiriBarTests.m */; };
-		6A77C12D1632341B00EF8A0C /* linen_bg_tile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A77C12C1632341B00EF8A0C /* linen_bg_tile.jpg */; };
+		6A77C12D1632341B00EF8A0C /* siribar_bg_tile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A77C12C1632341B00EF8A0C /* siribar_bg_tile.jpg */; };
 		6A77C13816323DB800EF8A0C /* siri.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A77C13716323DB800EF8A0C /* siri.png */; };
 		6A77C13D163246B800EF8A0C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6A77C13C163246B800EF8A0C /* README.md */; };
 		6D1B085516326F4100CDB127 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 6D1B085416326F4100CDB127 /* icon.icns */; };
 		6D1B0859163284DC00CDB127 /* SiriBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1B0858163284DC00CDB127 /* SiriBar.m */; };
+		6D1CB65316338D8800C8780D /* jbl_ambiguous.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6D1CB64E16338D8800C8780D /* jbl_ambiguous.caf */; };
+		6D1CB65416338D8800C8780D /* jbl_begin.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6D1CB64F16338D8800C8780D /* jbl_begin.caf */; };
+		6D1CB65516338D8800C8780D /* jbl_cancel.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6D1CB65016338D8800C8780D /* jbl_cancel.caf */; };
+		6D1CB65616338D8800C8780D /* jbl_confirm.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6D1CB65116338D8800C8780D /* jbl_confirm.caf */; };
+		6D1CB65716338D8800C8780D /* jbl_no_match.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6D1CB65216338D8800C8780D /* jbl_no_match.caf */; };
+		6D1CB65A16338EFA00C8780D /* jbl_begin.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6D1CB64F16338D8800C8780D /* jbl_begin.caf */; };
+		6D1CB65B163391C100C8780D /* jbl_cancel.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6D1CB65016338D8800C8780D /* jbl_cancel.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,12 +61,17 @@
 		6A77C11F16322F9800EF8A0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A77C12116322F9800EF8A0C /* SiriBarTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SiriBarTests.h; sourceTree = "<group>"; };
 		6A77C12216322F9800EF8A0C /* SiriBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SiriBarTests.m; sourceTree = "<group>"; };
-		6A77C12C1632341B00EF8A0C /* linen_bg_tile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = linen_bg_tile.jpg; sourceTree = "<group>"; };
+		6A77C12C1632341B00EF8A0C /* siribar_bg_tile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = siribar_bg_tile.jpg; sourceTree = "<group>"; };
 		6A77C13716323DB800EF8A0C /* siri.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = siri.png; sourceTree = "<group>"; };
 		6A77C13C163246B800EF8A0C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		6D1B085416326F4100CDB127 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		6D1B0857163284DC00CDB127 /* SiriBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiriBar.h; sourceTree = "<group>"; };
 		6D1B0858163284DC00CDB127 /* SiriBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiriBar.m; sourceTree = "<group>"; };
+		6D1CB64E16338D8800C8780D /* jbl_ambiguous.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = jbl_ambiguous.caf; path = "siri sounds/jbl_ambiguous.caf"; sourceTree = "<group>"; };
+		6D1CB64F16338D8800C8780D /* jbl_begin.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = jbl_begin.caf; path = "siri sounds/jbl_begin.caf"; sourceTree = "<group>"; };
+		6D1CB65016338D8800C8780D /* jbl_cancel.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = jbl_cancel.caf; path = "siri sounds/jbl_cancel.caf"; sourceTree = "<group>"; };
+		6D1CB65116338D8800C8780D /* jbl_confirm.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = jbl_confirm.caf; path = "siri sounds/jbl_confirm.caf"; sourceTree = "<group>"; };
+		6D1CB65216338D8800C8780D /* jbl_no_match.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = jbl_no_match.caf; path = "siri sounds/jbl_no_match.caf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,8 +152,9 @@
 		6A77C0FF16322F9700EF8A0C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6D1CB65916338D9200C8780D /* Siri sounds */,
 				6A77C13716323DB800EF8A0C /* siri.png */,
-				6A77C12C1632341B00EF8A0C /* linen_bg_tile.jpg */,
+				6A77C12C1632341B00EF8A0C /* siribar_bg_tile.jpg */,
 				6A77C10016322F9700EF8A0C /* SiriBar-Info.plist */,
 				6A77C10116322F9700EF8A0C /* InfoPlist.strings */,
 				6A77C10416322F9700EF8A0C /* main.m */,
@@ -168,6 +181,18 @@
 				6A77C11E16322F9800EF8A0C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6D1CB65916338D9200C8780D /* Siri sounds */ = {
+			isa = PBXGroup;
+			children = (
+				6D1CB64E16338D8800C8780D /* jbl_ambiguous.caf */,
+				6D1CB64F16338D8800C8780D /* jbl_begin.caf */,
+				6D1CB65016338D8800C8780D /* jbl_cancel.caf */,
+				6D1CB65116338D8800C8780D /* jbl_confirm.caf */,
+				6D1CB65216338D8800C8780D /* jbl_no_match.caf */,
+			);
+			name = "Siri sounds";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,10 +266,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D1CB65B163391C100C8780D /* jbl_cancel.caf in Resources */,
+				6D1CB65A16338EFA00C8780D /* jbl_begin.caf in Resources */,
 				6A77C10316322F9700EF8A0C /* InfoPlist.strings in Resources */,
 				6A77C10916322F9700EF8A0C /* Credits.rtf in Resources */,
 				6A77C10F16322F9800EF8A0C /* MainMenu.xib in Resources */,
-				6A77C12D1632341B00EF8A0C /* linen_bg_tile.jpg in Resources */,
+				6A77C12D1632341B00EF8A0C /* siribar_bg_tile.jpg in Resources */,
 				6A77C13816323DB800EF8A0C /* siri.png in Resources */,
 				6A77C13D163246B800EF8A0C /* README.md in Resources */,
 				6D1B085516326F4100CDB127 /* icon.icns in Resources */,
@@ -256,6 +283,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A77C12016322F9800EF8A0C /* InfoPlist.strings in Resources */,
+				6D1CB65316338D8800C8780D /* jbl_ambiguous.caf in Resources */,
+				6D1CB65416338D8800C8780D /* jbl_begin.caf in Resources */,
+				6D1CB65516338D8800C8780D /* jbl_cancel.caf in Resources */,
+				6D1CB65616338D8800C8780D /* jbl_confirm.caf in Resources */,
+				6D1CB65716338D8800C8780D /* jbl_no_match.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
