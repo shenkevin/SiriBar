@@ -11,6 +11,10 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate> {
     IBOutlet SiriBar *siribar;
+    Boolean screenraised;
 }
+
+-(IBAction)toggleScreen:(id)sender;
+-(IBAction)showaboutwindow:(id)sender;
 
 @end

@@ -21,9 +21,8 @@
 -(void)activateSiriBar;
 -(void)raiseScreen;
 -(void)lowerScreen;
+-(void)toggleScreen;
 -(void)deactivateSiriBar;
--(IBAction)showaboutwindow:(id)sender;
--(IBAction)hidescreenshot:(id)sender;
--(IBAction)hidesiri:(id)sender;
+-(void)terminateWithOpenSiriBar;
 
 @end
