@@ -10,6 +10,7 @@
 
 #define _contextDuration 0.25 // How long the animations will be - default is 0.25
 #define _completionDelay 0.25 // How long the delay will be before a method is run after an animation is run (to be used with performSelector:withObject:afterDelay: calls) - default is 0.5
+#define _extrabuttonOnRaisedScreen true
 
 @implementation SiriBar
 
@@ -47,9 +48,11 @@
 -(void)raiseScreen {
     NSRect screenrect = [[NSScreen mainScreen] frame];
     [[NSAnimationContext currentContext] setDuration:_contextDuration];
-    [[_backwindow animator] setFrame:NSMakeRect(0, screenrect.size.height, screenrect.size.width, screenrect.size.height) display:YES];
-    [[_window animator] setFrame:NSMakeRect(0, 0, screenrect.size.width, screenrect.size.height) display:YES];
+    [[_backwindow animator] setFrame:NSMakeRect(0, screenrect.size.height-22, screenrect.size.width, screenrect.size.height) display:YES];
+    [[_window animator] setFrame:NSMakeRect(0, 0, screenrect.size.width, screenrect.size.height-22) display:YES];
+    if (!_extrabuttonOnRaisedScreen){
     [extrabutton setHidden:true];
+    }
 }
 
 -(void)lowerScreen {
