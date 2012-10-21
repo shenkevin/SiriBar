@@ -14,6 +14,7 @@
     Boolean screenraised;
 }
 
+-(IBAction)activateSiriBar:(id)sender;
 -(IBAction)toggleScreen:(id)sender;
 -(IBAction)showaboutwindow:(id)sender;
 
