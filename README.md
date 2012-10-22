@@ -6,7 +6,7 @@ SiriBar is a little project written by me that simulates the Siri interface from
 
 1. Copy SiriBar.h and SiriBar.m to your project.
 2. Add an NSObject, and change the class to SiriBar.
-3. Connect a window (for best effect make this window 200px high) to the window object.
+3. Connect a window to the window object.
 4. (optional) If you want an extra button, connect a button to the extrabutton object (so it can hide and show at the appropriate time)
 5. Import SiriBar.h into a class that you want to use to activate SiriBar with.
 6. (optional) If you want a background for SiriBar, add an image to your project called siribar_bg_tile (use whatever image extension required). It can be a pattern/repeating image if required.
@@ -15,7 +15,7 @@ SiriBar is a little project written by me that simulates the Siri interface from
 9. Use [siribar activateSiriBar]; to activate.
 It's that easy!
 
-The six primary methods are:  
+The six  methods are:  
 -(void)activateSiriBar; //To raise SiriBar  
 -(void)activateSiriBar; // To raise SiriBar  
 -(void)raiseScreen; // To hide the screenshot, as to reveal more information  

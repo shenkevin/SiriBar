@@ -20,6 +20,8 @@
 
 @synthesize backWindow=_backWindow;
 
+#pragma mark - Primary methods
+
 -(void)activateSiriBar {
     NSRect screenrect = [[NSScreen mainScreen] frame];
     if (!setupDone) {
@@ -56,6 +58,28 @@
     [_window setBackgroundColor:[NSColor colorWithPatternImage:[NSImage imageNamed:@"siribar_bg_tile"]]];
 }
 
+-(void)deactivateSiriBar {
+    if (!setupDone) {
+        [NSException raise:@"Call to SiriBar is invalid" format:@"SiriBar is not active", nil];
+    }else{
+        setupDone=false;
+        NSRect screenrect = [[NSScreen mainScreen] frame];
+        [[NSAnimationContext currentContext] setDuration:_contextDuration];
+        [[_backWindow animator] setFrame:NSMakeRect(0, 0, screenrect.size.width, screenrect.size.height) display:YES];
+        [[_window animator] setFrame:NSMakeRect(0, -200, screenrect.size.width, 200) display:YES];
+        [_window performSelector:@selector(close) withObject:nil afterDelay:[[NSAnimationContext currentContext] duration]+_completionDelay];
+        [_backWindow performSelector:@selector(close) withObject:nil afterDelay:[[NSAnimationContext currentContext] duration]+_completionDelay];
+        [[NSApplication sharedApplication] performSelector:@selector(setPresentationOptions:) withObject:nil afterDelay:[[NSAnimationContext currentContext] duration]+_completionDelay];
+    }
+}
+
+-(void)terminateWithOpenSiriBar {
+    [self deactivateSiriBar];
+    [[NSApplication sharedApplication] performSelector:@selector(terminate:) withObject:nil afterDelay:[[NSAnimationContext currentContext] duration]+_completionDelay];
+}
+
+#pragma mark - Screen methods
+
 -(void)raiseScreen {
     if (!setupDone) {
         [NSException raise:@"Call to SiriBar is invalid" format:@"SiriBar is not active", nil];
@@ -80,26 +104,6 @@
     [[_window animator] setFrame:NSMakeRect(0, 0, screenrect.size.width, siribarHeight) display:YES];
     [extraButton setHidden:false];
     }
-}
-
--(void)deactivateSiriBar {
-    if (!setupDone) {
-        [NSException raise:@"Call to SiriBar is invalid" format:@"SiriBar is not active", nil];
-    }else{
-        setupDone=false;
-    NSRect screenrect = [[NSScreen mainScreen] frame];
-    [[NSAnimationContext currentContext] setDuration:_contextDuration];
-    [[_backWindow animator] setFrame:NSMakeRect(0, 0, screenrect.size.width, screenrect.size.height) display:YES];
-    [[_window animator] setFrame:NSMakeRect(0, -200, screenrect.size.width, 200) display:YES];
-    [_window performSelector:@selector(close) withObject:nil afterDelay:[[NSAnimationContext currentContext] duration]+_completionDelay];
-    [_backWindow performSelector:@selector(close) withObject:nil afterDelay:[[NSAnimationContext currentContext] duration]+_completionDelay];
-    [[NSApplication sharedApplication] performSelector:@selector(setPresentationOptions:) withObject:nil afterDelay:[[NSAnimationContext currentContext] duration]+_completionDelay];
-    }
-}
-
--(void)terminateWithOpenSiriBar {
-    [self deactivateSiriBar];
-    [[NSApplication sharedApplication] performSelector:@selector(terminate:) withObject:nil afterDelay:[[NSAnimationContext currentContext] duration]+_completionDelay];
 }
 
 -(void)toggleScreen {
