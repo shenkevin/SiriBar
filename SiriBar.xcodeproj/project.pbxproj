@@ -29,6 +29,7 @@
 		6D1CB65716338D8800C8780D /* jbl_no_match.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6D1CB65216338D8800C8780D /* jbl_no_match.caf */; };
 		6D1CB65A16338EFA00C8780D /* jbl_begin.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6D1CB64F16338D8800C8780D /* jbl_begin.caf */; };
 		6D1CB65B163391C100C8780D /* jbl_cancel.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6D1CB65016338D8800C8780D /* jbl_cancel.caf */; };
+		6D629EB41640EBFC0059EDCD /* SBWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D629EB31640EBFC0059EDCD /* SBWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		6D1CB65016338D8800C8780D /* jbl_cancel.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = jbl_cancel.caf; path = "siri sounds/jbl_cancel.caf"; sourceTree = "<group>"; };
 		6D1CB65116338D8800C8780D /* jbl_confirm.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = jbl_confirm.caf; path = "siri sounds/jbl_confirm.caf"; sourceTree = "<group>"; };
 		6D1CB65216338D8800C8780D /* jbl_no_match.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = jbl_no_match.caf; path = "siri sounds/jbl_no_match.caf"; sourceTree = "<group>"; };
+		6D629EB21640EBFC0059EDCD /* SBWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBWindow.h; sourceTree = "<group>"; };
+		6D629EB31640EBFC0059EDCD /* SBWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,12 +142,8 @@
 		6A77C0FE16322F9700EF8A0C /* SiriBar */ = {
 			isa = PBXGroup;
 			children = (
-				6A77C10A16322F9700EF8A0C /* AppDelegate.h */,
-				6A77C10B16322F9700EF8A0C /* AppDelegate.m */,
-				6D1B0857163284DC00CDB127 /* SiriBar.h */,
-				6D1B0858163284DC00CDB127 /* SiriBar.m */,
-				6A77C10D16322F9800EF8A0C /* MainMenu.xib */,
-				6A77C0FF16322F9700EF8A0C /* Supporting Files */,
+				6D629EB81640ECCE0059EDCD /* SiriBar files */,
+				6D629EB71640EC1C0059EDCD /* Demo app files */,
 			);
 			path = SiriBar;
 			sourceTree = "<group>";
@@ -154,7 +153,6 @@
 			children = (
 				6D1CB65916338D9200C8780D /* Siri sounds */,
 				6A77C13716323DB800EF8A0C /* siri.png */,
-				6A77C12C1632341B00EF8A0C /* siribar_bg_tile.jpg */,
 				6A77C10016322F9700EF8A0C /* SiriBar-Info.plist */,
 				6A77C10116322F9700EF8A0C /* InfoPlist.strings */,
 				6A77C10416322F9700EF8A0C /* main.m */,
@@ -193,6 +191,37 @@
 				6D1CB65216338D8800C8780D /* jbl_no_match.caf */,
 			);
 			name = "Siri sounds";
+			sourceTree = "<group>";
+		};
+		6D629EB71640EC1C0059EDCD /* Demo app files */ = {
+			isa = PBXGroup;
+			children = (
+				6A77C10A16322F9700EF8A0C /* AppDelegate.h */,
+				6A77C10B16322F9700EF8A0C /* AppDelegate.m */,
+				6A77C10D16322F9800EF8A0C /* MainMenu.xib */,
+				6A77C0FF16322F9700EF8A0C /* Supporting Files */,
+			);
+			name = "Demo app files";
+			sourceTree = "<group>";
+		};
+		6D629EB81640ECCE0059EDCD /* SiriBar files */ = {
+			isa = PBXGroup;
+			children = (
+				6D1B0857163284DC00CDB127 /* SiriBar.h */,
+				6D1B0858163284DC00CDB127 /* SiriBar.m */,
+				6D629EB91640ECD80059EDCD /* Optional */,
+			);
+			name = "SiriBar files";
+			sourceTree = "<group>";
+		};
+		6D629EB91640ECD80059EDCD /* Optional */ = {
+			isa = PBXGroup;
+			children = (
+				6A77C12C1632341B00EF8A0C /* siribar_bg_tile.jpg */,
+				6D629EB21640EBFC0059EDCD /* SBWindow.h */,
+				6D629EB31640EBFC0059EDCD /* SBWindow.m */,
+			);
+			name = Optional;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +346,7 @@
 				6A77C10516322F9700EF8A0C /* main.m in Sources */,
 				6A77C10C16322F9700EF8A0C /* AppDelegate.m in Sources */,
 				6D1B0859163284DC00CDB127 /* SiriBar.m in Sources */,
+				6D629EB41640EBFC0059EDCD /* SBWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

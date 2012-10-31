@@ -16,6 +16,13 @@
     [siribar activateSiriBar];
 }
 
+-(void)applicationWillTerminate:(NSNotification *)notification {
+    if ([siribar siribarIsActive]){
+        NSLog(@"bye");
+        [siribar deactivateSiriBar];
+    }
+}
+
 -(IBAction)activateSiriBar:(id)sender {
     [siribar activateSiriBar];
 }

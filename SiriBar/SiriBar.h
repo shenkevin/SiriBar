@@ -10,15 +10,14 @@
 
 @interface SiriBar : NSObject {
     Boolean screenRaised;
-    Boolean setupDone;
+    Boolean siribarIsActive;
     CGFloat siribarHeight;
     NSButton *windowCloseButton; // the fullscreen button that when clicked on, closes SiriBar. This button is assigned to backwindow.
     NSWindow *backWindow;
-    IBOutlet NSButton *extraButton;
 }
 
-@property (weak) IBOutlet NSWindow *window;
-@property (weak) IBOutlet NSWindow *extraWindow;
+@property (strong) IBOutlet NSWindow *siribar;
+@property (strong) IBOutlet NSWindow *extraWindow;
 @property (strong) NSWindow *backWindow;
 
 -(BOOL)siribarIsActive;
