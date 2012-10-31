@@ -13,34 +13,15 @@
 		6A77C10916322F9700EF8A0C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6A77C10716322F9700EF8A0C /* Credits.rtf */; };
 		6A77C10C16322F9700EF8A0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A77C10B16322F9700EF8A0C /* AppDelegate.m */; };
 		6A77C10F16322F9800EF8A0C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A77C10D16322F9800EF8A0C /* MainMenu.xib */; };
-		6A77C11716322F9800EF8A0C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A77C11616322F9800EF8A0C /* SenTestingKit.framework */; };
-		6A77C11816322F9800EF8A0C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A77C0F816322F9700EF8A0C /* Cocoa.framework */; };
-		6A77C12016322F9800EF8A0C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A77C11E16322F9800EF8A0C /* InfoPlist.strings */; };
-		6A77C12316322F9800EF8A0C /* SiriBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A77C12216322F9800EF8A0C /* SiriBarTests.m */; };
 		6A77C12D1632341B00EF8A0C /* siribar_bg_tile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A77C12C1632341B00EF8A0C /* siribar_bg_tile.jpg */; };
 		6A77C13816323DB800EF8A0C /* siri.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A77C13716323DB800EF8A0C /* siri.png */; };
 		6A77C13D163246B800EF8A0C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6A77C13C163246B800EF8A0C /* README.md */; };
 		6D1B085516326F4100CDB127 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 6D1B085416326F4100CDB127 /* icon.icns */; };
 		6D1B0859163284DC00CDB127 /* SiriBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1B0858163284DC00CDB127 /* SiriBar.m */; };
-		6D1CB65316338D8800C8780D /* jbl_ambiguous.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6D1CB64E16338D8800C8780D /* jbl_ambiguous.caf */; };
-		6D1CB65416338D8800C8780D /* jbl_begin.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6D1CB64F16338D8800C8780D /* jbl_begin.caf */; };
-		6D1CB65516338D8800C8780D /* jbl_cancel.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6D1CB65016338D8800C8780D /* jbl_cancel.caf */; };
-		6D1CB65616338D8800C8780D /* jbl_confirm.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6D1CB65116338D8800C8780D /* jbl_confirm.caf */; };
-		6D1CB65716338D8800C8780D /* jbl_no_match.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6D1CB65216338D8800C8780D /* jbl_no_match.caf */; };
 		6D1CB65A16338EFA00C8780D /* jbl_begin.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6D1CB64F16338D8800C8780D /* jbl_begin.caf */; };
 		6D1CB65B163391C100C8780D /* jbl_cancel.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6D1CB65016338D8800C8780D /* jbl_cancel.caf */; };
 		6D629EB41640EBFC0059EDCD /* SBWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D629EB31640EBFC0059EDCD /* SBWindow.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6A77C11916322F9800EF8A0C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6A77C0EB16322F9700EF8A0C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6A77C0F316322F9700EF8A0C;
-			remoteInfo = SiriBar;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6A77C0F416322F9700EF8A0C /* SiriBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,12 +37,7 @@
 		6A77C10A16322F9700EF8A0C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6A77C10B16322F9700EF8A0C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6A77C10E16322F9800EF8A0C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		6A77C11516322F9800EF8A0C /* SiriBarTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SiriBarTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A77C11616322F9800EF8A0C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		6A77C11D16322F9800EF8A0C /* SiriBarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SiriBarTests-Info.plist"; sourceTree = "<group>"; };
-		6A77C11F16322F9800EF8A0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6A77C12116322F9800EF8A0C /* SiriBarTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SiriBarTests.h; sourceTree = "<group>"; };
-		6A77C12216322F9800EF8A0C /* SiriBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SiriBarTests.m; sourceTree = "<group>"; };
 		6A77C12C1632341B00EF8A0C /* siribar_bg_tile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = siribar_bg_tile.jpg; sourceTree = "<group>"; };
 		6A77C13716323DB800EF8A0C /* siri.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = siri.png; sourceTree = "<group>"; };
 		6A77C13C163246B800EF8A0C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
@@ -86,15 +62,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6A77C11116322F9800EF8A0C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6A77C11716322F9800EF8A0C /* SenTestingKit.framework in Frameworks */,
-				6A77C11816322F9800EF8A0C /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -104,7 +71,6 @@
 				6D1B085416326F4100CDB127 /* icon.icns */,
 				6A77C13C163246B800EF8A0C /* README.md */,
 				6A77C0FE16322F9700EF8A0C /* SiriBar */,
-				6A77C11B16322F9800EF8A0C /* SiriBarTests */,
 				6A77C0F716322F9700EF8A0C /* Frameworks */,
 				6A77C0F516322F9700EF8A0C /* Products */,
 			);
@@ -114,7 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				6A77C0F416322F9700EF8A0C /* SiriBar.app */,
-				6A77C11516322F9800EF8A0C /* SiriBarTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,25 +123,6 @@
 				6A77C10416322F9700EF8A0C /* main.m */,
 				6A77C10616322F9700EF8A0C /* SiriBar-Prefix.pch */,
 				6A77C10716322F9700EF8A0C /* Credits.rtf */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		6A77C11B16322F9800EF8A0C /* SiriBarTests */ = {
-			isa = PBXGroup;
-			children = (
-				6A77C12116322F9800EF8A0C /* SiriBarTests.h */,
-				6A77C12216322F9800EF8A0C /* SiriBarTests.m */,
-				6A77C11C16322F9800EF8A0C /* Supporting Files */,
-			);
-			path = SiriBarTests;
-			sourceTree = "<group>";
-		};
-		6A77C11C16322F9800EF8A0C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6A77C11D16322F9800EF8A0C /* SiriBarTests-Info.plist */,
-				6A77C11E16322F9800EF8A0C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -244,25 +190,6 @@
 			productReference = 6A77C0F416322F9700EF8A0C /* SiriBar.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6A77C11416322F9800EF8A0C /* SiriBarTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6A77C12916322F9800EF8A0C /* Build configuration list for PBXNativeTarget "SiriBarTests" */;
-			buildPhases = (
-				6A77C11016322F9800EF8A0C /* Sources */,
-				6A77C11116322F9800EF8A0C /* Frameworks */,
-				6A77C11216322F9800EF8A0C /* Resources */,
-				6A77C11316322F9800EF8A0C /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6A77C11A16322F9800EF8A0C /* PBXTargetDependency */,
-			);
-			name = SiriBarTests;
-			productName = SiriBarTests;
-			productReference = 6A77C11516322F9800EF8A0C /* SiriBarTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -285,7 +212,6 @@
 			projectRoot = "";
 			targets = (
 				6A77C0F316322F9700EF8A0C /* SiriBar */,
-				6A77C11416322F9800EF8A0C /* SiriBarTests */,
 			);
 		};
 /* End PBXProject section */
@@ -307,36 +233,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6A77C11216322F9800EF8A0C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6A77C12016322F9800EF8A0C /* InfoPlist.strings in Resources */,
-				6D1CB65316338D8800C8780D /* jbl_ambiguous.caf in Resources */,
-				6D1CB65416338D8800C8780D /* jbl_begin.caf in Resources */,
-				6D1CB65516338D8800C8780D /* jbl_cancel.caf in Resources */,
-				6D1CB65616338D8800C8780D /* jbl_confirm.caf in Resources */,
-				6D1CB65716338D8800C8780D /* jbl_no_match.caf in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		6A77C11316322F9800EF8A0C /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A77C0F016322F9700EF8A0C /* Sources */ = {
@@ -350,23 +247,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6A77C11016322F9800EF8A0C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6A77C12316322F9800EF8A0C /* SiriBarTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6A77C11A16322F9800EF8A0C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6A77C0F316322F9700EF8A0C /* SiriBar */;
-			targetProxy = 6A77C11916322F9800EF8A0C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6A77C10116322F9700EF8A0C /* InfoPlist.strings */ = {
@@ -391,14 +272,6 @@
 				6A77C10E16322F9800EF8A0C /* en */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		6A77C11E16322F9800EF8A0C /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6A77C11F16322F9800EF8A0C /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -481,38 +354,6 @@
 			};
 			name = Release;
 		};
-		6A77C12A16322F9800EF8A0C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SiriBar.app/Contents/MacOS/SiriBar";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SiriBar/SiriBar-Prefix.pch";
-				INFOPLIST_FILE = "SiriBarTests/SiriBarTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		6A77C12B16322F9800EF8A0C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SiriBar.app/Contents/MacOS/SiriBar";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SiriBar/SiriBar-Prefix.pch";
-				INFOPLIST_FILE = "SiriBarTests/SiriBarTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -530,15 +371,6 @@
 			buildConfigurations = (
 				6A77C12716322F9800EF8A0C /* Debug */,
 				6A77C12816322F9800EF8A0C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6A77C12916322F9800EF8A0C /* Build configuration list for PBXNativeTarget "SiriBarTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6A77C12A16322F9800EF8A0C /* Debug */,
-				6A77C12B16322F9800EF8A0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
