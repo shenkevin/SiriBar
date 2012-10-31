@@ -24,7 +24,7 @@ The six methods are:
 -(void)deactivateSiriBar; // Hide SiriBar and close the screenshot.  
 -(void)terminateWithOpenSiriBar; // Quit your application while SiriBar is open (not really needed - you could easily do this with deactivateSiriBar and performSelector:withObject:afterDelay:)  
   
-### Optional ###  
+### Optional ###
 • SBWindow (set this as the class of _extraWindow) - to allow _extraWindow to become key window.  
 • Apple linen (named siribar_bg_tile) - Background used by Apple for Siri, Notification Centre, etc. Use this for the background of SiriBar.  
   
