@@ -2,6 +2,8 @@
 
 SiriBar is a little project written by me that simulates the Siri interface from the iPhone.
 
+![SiriBar screenshot](https://dl.dropbox.com/u/31396142/siribar_screenshot.png)
+
 ## Implementing SiriBar ##
 
 1. Copy SiriBar.h and SiriBar.m to your project.
