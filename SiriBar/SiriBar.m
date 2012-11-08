@@ -30,6 +30,9 @@
     }else{ // Otherwise
         [NSException raise:@"Call to SiriBar is invalid" format:@"SiriBar is already active", nil]; // Throw an exception - why are you activating SiriBar if it's already active?
     }
+    if (!_siribar) {
+        [NSException raise:@"Call to SiriBar is invalid" format:@"_siribar is nil", nil]; // Throw an exception - No _siribar, no activate, no fun today :(
+    }
     NSRect screenrect = [[NSScreen mainScreen] frame]; // Get screen frame
     system("screencapture -mxtpng /tmp/screenshot.png &> /dev/null"); // Create a screenshot
     NSImage *screenimg = [[NSImage alloc] initWithContentsOfFile:@"/tmp/screenshot.png"]; // Create UIImage from screenshot.png
